@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@300;400&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+    footer p{
+        font-size: 15px;
+    }
+    footer a{
+        text-decoration: none;
+    }
+    footer a svg{
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    footer div a svg{
+        color: #5a885c;
+        position: fixed;
+        right: 30px;
+        bottom: 25px;
+    }
+    
+
+.text-center{
+        text-align: center;
+}
+    
+.box-top{
+        padding: 10px;
+        background-color: black;
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+}
+
+.contenedor-inicio{
+    background-color:rgb(245, 236, 236);
+    width: 80vw;
+    height: auto;
+    margin:50px auto;
+    padding: 20px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+    .contenedor div p{
+        margin-top: 20px;
+    }    
+
+.contenedor-como{
+    background-color:rgb(245, 236, 236);
+    width: 70vw;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+header img{
+    width: 100%;
+}
+
+main h1{
+    color: black;
+    font-weight: 400;
+    font-size: 2em;
+    margin: 30px;
+}
+
+main h2{
+    color: black;
+    font-weight: 400;
+    font-size: 1,1em;
+    margin: 30px;
+}
+
+main h3{
+    color: black;
+    font-weight: 400;
+    font-size: 1,2em;
+    margin: 60px;
+}
+
+
+.texto-color{
+    color: white;
+}
+
+/* .productos{
+    background-color: #5a885c;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+       .productos figure{
+        width: 25%;
+        padding: 0px;
+        padding-bottom: 15px;
+       }
+            .productos figure img{
+
+            .productos figure figcaption{
+                color: black;
+                font-size: 1rem;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .productos figure p{
+                margin-bottom: 10px;
+            }
+            .productos figure button{
+                background-color: #828282;
+                color: white;
+                border: none;
+                padding: 7px;
+
+            } */
+
+.filtros a{
+        color: black;
+        font-size: 1em;
+        text-decoration: none;
+}
+    .filtros a:hover{
+        color: rgb(112, 111, 111);
+    }
+
+.filtros span{
+    font-size: 1,1em;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.grid{
+    /* width: 99%; */
+    display: grid;
+}
+
+.tienda{
+    margin: 15px 150px 50px 150px;
+    display: grid;
+    grid-template-columns: 13% repeat(4,1fr);
+    grid-template-rows: 30px repeat(3,630px);
+    gap: 30px;
+    grid-template-areas: 
+    "inicio actions actions actions actions"
+    "filtros uno dos tres cuatro"
+    "filtros cinco seis siete ocho"
+    "filtros nueve diez once doce";  
+}
+
+    .tienda .inicio{
+        /* background-color: blue; */
+        grid-area: inicio;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .tienda .actions{
+        /* background-color: aquamarine; */
+        grid-area: actions;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .tienda .filtros{
+        /* background-color: palevioletred; */
+        grid-area: filtros;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 25px;
+    }
+    
+    .tienda .prod1{
+        grid-area:uno;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod2{
+        grid-area:dos;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod3{
+        grid-area:tres;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod4{
+        grid-area:cuatro;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod5{
+        grid-area:cinco;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod6{
+        grid-area:seis;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod7{
+        grid-area:siete;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod8{
+        grid-area:ocho;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod9{
+        grid-area:nueve;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod10{
+        grid-area:diez;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod11{
+        grid-area:once;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .tienda .prod12{
+        grid-area:doce;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+    }
+
+main section figure{
+    line-height: 30px;
+}
+
+    main section figure img{
+        width: 100%;
+    }
+
+    main section figure figcaption{
+    display: flex;
+    justify-content: center;
+    }
+
+    main section figure span b{
+    display: flex;
+    justify-content: center;
+    }
+
+    main section figure p{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    }
+
+    main section figure button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 3px;
+    }
+
+.botonera{
+    background-color: rgb(232, 229, 229);
+    padding: 10px 30px;
+    position: sticky;
+    top: 0%;
+    left:0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.botonera ul{
+    font-weight: 400;
+}
+
+.comandos{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+    .comandos button{
+    border: none;
+    margin: 10px;
+    }
+
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.destacado{
+    margin: 15px 150px 50px 150px;
+}
+
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1em;
+}
+    .preguntas div h2{
+        font-weight: 400;
+        font-size: 2em;
+    }
+    .preguntas div ul li{
+        font-weight: 400;
+        font-size: 1,9em;
+        list-style: none;
+        display: flex;
+    }
+
+
+.contenedor-inicio{
+    background-color:rgb(245, 236, 236);
+    width: 80vw;
+    height: auto;
+    margin:50px auto;
+    padding: 20px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.container{
+    margin-top: 70px;
+}
+
+.lista-contacto{
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .lista-contacto span{
+        font-weight: 400;
+        font-size: 1.7em;
+    }
+    .lista-contacto p{
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+
+/* Media queries */
+
+@media (width < 576px){
+}
