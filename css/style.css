@@ -39,15 +39,14 @@ footer{
 }
     
 .box-top{
-        padding: 10px;
+        padding: 6px;
         background-color: black;
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: white;
 }
 
 .contenedor-inicio{
-    background-color:rgb(245, 236, 236);
     width: 80vw;
     height: auto;
     margin:50px auto;
@@ -58,12 +57,11 @@ footer{
     justify-content: space-around;
 }
 
-    .contenedor div p{
-        margin-top: 20px;
+    .contenedor-inicio div p{
+        margin-top: 22px;
     }    
 
 .contenedor-como{
-    background-color:rgb(245, 236, 236);
     width: 70vw;
     height: auto;
     margin: 50px auto;
@@ -73,6 +71,11 @@ footer{
     justify-content: center;
     justify-content: space-around;
 }
+    .contenedor-como  div span{
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+    }
 
 header img{
     width: 100%;
@@ -82,20 +85,20 @@ main h1{
     color: black;
     font-weight: 400;
     font-size: 2em;
-    margin: 30px;
+    margin: 20px;
 }
 
 main h2{
     color: black;
     font-weight: 400;
-    font-size: 1,1em;
-    margin: 30px;
+    font-size: 1.5em;
+    margin: 15px;
 }
 
 main h3{
     color: black;
     font-weight: 400;
-    font-size: 1,2em;
+    font-size: 1.5em;
     margin: 60px;
 }
 
@@ -103,39 +106,6 @@ main h3{
 .texto-color{
     color: white;
 }
-
-/* .productos{
-    background-color: #5a885c;
-    padding-right: 100px;
-    padding-left: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-       .productos figure{
-        width: 25%;
-        padding: 0px;
-        padding-bottom: 15px;
-       }
-            .productos figure img{
-
-            .productos figure figcaption{
-                color: black;
-                font-size: 1rem;
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-            .productos figure p{
-                margin-bottom: 10px;
-            }
-            .productos figure button{
-                background-color: #828282;
-                color: white;
-                border: none;
-                padding: 7px;
-
-            } */
 
 .filtros a{
         color: black;
@@ -147,19 +117,18 @@ main h3{
     }
 
 .filtros span{
-    font-size: 1,1em;
+    font-size: 1em;
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .grid{
-    /* width: 99%; */
     display: grid;
 }
 
 .tienda{
-    margin: 15px 150px 50px 150px;
+    margin: 30px 150px 60px 150px;
     display: grid;
     grid-template-columns: 13% repeat(4,1fr);
     grid-template-rows: 30px repeat(3,630px);
@@ -177,6 +146,10 @@ main h3{
         display: flex;
         justify-content: flex-start;
     }
+        .tienda .inicio a{
+            color: black;
+            text-decoration: none;
+        }
 
     .tienda .actions{
         /* background-color: aquamarine; */
@@ -186,7 +159,6 @@ main h3{
     }
 
     .tienda .filtros{
-        /* background-color: palevioletred; */
         grid-area: filtros;
         display: flex;
         flex-direction: column;
@@ -310,7 +282,7 @@ main section figure{
     }
 
 .botonera{
-    background-color: rgb(232, 229, 229);
+    background-color: rgb(134, 24, 24);
     padding: 10px 30px;
     position: sticky;
     top: 0%;
@@ -318,10 +290,6 @@ main section figure{
     width: 100%;
     display: flex;
     flex-direction: row;
-}
-
-.botonera ul{
-    font-weight: 400;
 }
 
 .comandos{
@@ -348,18 +316,25 @@ main section figure{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 1em;
+    /* font-size: 1em; */
+}
+    
+
+.preguntas{
+    margin: 20px 50px 70px 50px;
 }
     .preguntas div h2{
         font-weight: 400;
-        font-size: 2em;
+        font-size: 1.7em;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
-    .preguntas div ul li{
+        .preguntas div ul li{
         font-weight: 400;
-        font-size: 1,9em;
-        list-style: none;
+        font-size: 1.1em;
         display: flex;
-    }
+        line-height: 40px;
+        }
 
 
 .contenedor-inicio{
@@ -375,7 +350,7 @@ main section figure{
 }
 
 .container{
-    margin-top: 70px;
+    margin: 65px 100px 75px 100px;
 }
 
 .lista-contacto{
@@ -398,5 +373,8 @@ main section figure{
 
 /* Media queries */
 
-@media (width < 576px){
+@media (width > 768px){
+    h1{
+        color: #5a885c;
+    }
 }
