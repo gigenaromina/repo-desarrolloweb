@@ -11,26 +11,31 @@
 footer{
     background-color: black;
     color: white;
-    padding: 20px 40px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+footer h4{
+    font-size: 1.4em;
 }
     footer p{
-        font-size: 15px;
+        font-size: 1em;
     }
     footer a{
         text-decoration: none;
     }
     footer a svg{
-        width: 40px;
-        margin-top: 15px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        margin-left: 15px;
+        margin-top: 0.8%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        margin-left: 0.7%;
     }
     footer div a svg{
         color: #5a885c;
         position: fixed;
-        right: 30px;
-        bottom: 25px;
+        width: 60px;
+        right: 1.5%;
+        bottom: 3.5%;
     }
     
 
@@ -39,7 +44,7 @@ footer{
 }
     
 .box-top{
-        padding: 6px;
+        padding: 0.4%;
         background-color: black;
         text-align: center;
         font-size: 0.9rem;
@@ -49,8 +54,8 @@ footer{
 .contenedor-inicio{
     width: 80vw;
     height: auto;
-    margin:50px auto;
-    padding: 20px;;
+    margin:10% auto;
+    padding: 5%;;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -84,24 +89,23 @@ header img{
 main h1{
     color: black;
     font-weight: 400;
-    font-size: 2em;
-    margin: 20px;
+    font-size: 1.8em;
+    margin: 0.8%;
 }
 
 main h2{
     color: black;
     font-weight: 400;
-    font-size: 1.5em;
-    margin: 15px;
+    font-size: 1.4em;
+    margin: 1%;
 }
 
 main h3{
     color: black;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 60px;
 }
-
 
 .texto-color{
     color: white;
@@ -128,11 +132,11 @@ main h3{
 }
 
 .tienda{
-    margin: 30px 150px 60px 150px;
+    margin: 2% 10% 9% 10%;
     display: grid;
     grid-template-columns: 13% repeat(4,1fr);
-    grid-template-rows: 30px repeat(3,630px);
-    gap: 30px;
+    grid-template-rows: 2% repeat(3,34%);
+    gap: 1%;
     grid-template-areas: 
     "inicio actions actions actions actions"
     "filtros uno dos tres cuatro"
@@ -282,7 +286,7 @@ main section figure{
     }
 
 .botonera{
-    background-color: rgb(134, 24, 24);
+    background-color: white;
     padding: 10px 30px;
     position: sticky;
     top: 0%;
@@ -309,7 +313,7 @@ main section figure{
 }
 
 .destacado{
-    margin: 15px 150px 50px 150px;
+    margin: 1% 10% 5% 10%;
 }
 
 .preguntas{
@@ -321,13 +325,13 @@ main section figure{
     
 
 .preguntas{
-    margin: 20px 50px 70px 50px;
+    margin: 1% 3% 5% 3%;
 }
     .preguntas div h2{
         font-weight: 400;
         font-size: 1.7em;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 2%;
+        margin-bottom: 0.8%;
     }
         .preguntas div ul li{
         font-weight: 400;
@@ -335,7 +339,6 @@ main section figure{
         display: flex;
         line-height: 40px;
         }
-
 
 .contenedor-inicio{
     background-color:rgb(245, 236, 236);
@@ -350,31 +353,105 @@ main section figure{
 }
 
 .container{
-    margin: 65px 100px 75px 100px;
+    margin: 3% 20% 15% 20%;
 }
 
 .lista-contacto{
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-    .lista-contacto span{
+    /* .lista-contacto span{
         font-weight: 400;
         font-size: 1.7em;
-    }
+    } */
+
     .lista-contacto p{
         font-weight: 400;
         font-size: 1.5em;
     }
-
-
-/* Media queries */
-
-@media (width > 768px){
-    h1{
-        color: #5a885c;
+    .lista-contacto svg{
+        width: 8%;
     }
+
+    iframe{
+        width: 80%;
+    }
+
+/* Media queries pages Preguntas frecuentes y Contacto*/
+
+@media (max-width: 991px){
+    .comandos{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    footer h4{
+        font-size: 1em;
+    }
+        footer p{
+            font-size: 0.8em;
+        }
+        footer a svg{
+            width: 28px;
+        margin-top: 1%;
+        margin-right: 1.2%;
+        margin-bottom: 1.2%;
+        margin-left: 1.2%;
+            }
+        
+        footer div a svg{
+            width: 30px;
+            right: 1.5%;
+            bottom: 10%;
+        }
+
+    main h1{
+        font-size: 1.4em;
+        margin: 0.6%;
+    }
+
+    .preguntas div h2{
+        font-size: 1.2em;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+        .preguntas div ul li{
+            font-weight: 400;
+            font-size: 1em;
+            display: flex;
+            line-height: 35px;
+            }
+    
+    .lista-contacto p{
+        font-weight: 400;
+        font-size: 1em;
+    }
+    
+    iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    main h1{
+        font-size: 1.2em;
+        margin: 0.6%;
+    }
+
+    .preguntas div h2{
+        font-size: 1em;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+        .preguntas div ul li{
+            font-weight: 400;
+            font-size: 0.9em;
+            display: flex;
+            line-height: 30px;
+            }
 }
