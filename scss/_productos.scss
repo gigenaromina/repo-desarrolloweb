@@ -1,0 +1,127 @@
+.grid{
+    display: grid;
+}
+
+.tienda{
+    margin: 2% 10% 9% 10%;
+    display: grid;
+    grid-template-columns: 13% repeat(4,1fr);
+    grid-template-rows: 2% repeat(3,34%);
+    gap: 1%;
+    grid-template-areas: 
+    "inicio actions actions actions actions"
+    "filtros uno dos tres cuatro"
+    "filtros cinco seis siete ocho"
+    "filtros nueve diez once doce";
+    .inicio{
+        grid-area: inicio;
+        @include flex(row, flex-start, center, nowrap);
+        a{
+            color: $maincolor;
+            text-decoration: none;
+        }
+    }
+    .actions{
+        grid-area: actions;
+        @include flex(row, flex-end, flex-start, nowrap);
+    }
+    .filtros{
+        grid-area: filtros;
+        @include flex(column, flex-start, flex-start, nowrap);
+        line-height: 25px;
+        a{
+            color: $maincolor;
+            font-size: $textmd;
+            text-decoration: none;
+            &:hover{
+                color: $othercolor;
+            }
+        } 
+        span{
+            font-size: $textmd;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 10px; 
+        }
+    } 
+    .prod1{
+        grid-area:uno;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod2{
+        grid-area:dos;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod3{
+        grid-area:tres;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod4{
+        grid-area:cuatro;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod5{
+        grid-area:cinco;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod6{
+        grid-area:seis;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod7{
+        grid-area:siete;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod8{
+        grid-area:ocho;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod9{
+        grid-area:nueve;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod10{
+        grid-area:diez;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod11{
+        grid-area:once;
+        @include flex(row,center,center,nowrap);
+    }
+    .prod12{
+        grid-area:doce;
+        @include flex(row,center,center,nowrap);
+    }
+}
+
+main{
+    section{
+        figure{
+            line-height: 30px;
+            img{
+                width: 100%;
+            }
+            figcaption{
+                @include flex(row,center,center,nowrap);
+            }
+            span{
+                b{
+                    @include flex(row,center,center,nowrap);
+                }
+            } 
+            p{
+                @include flex(row,center,center,nowrap);
+                border-radius: 10px;
+            }
+            button{
+                @include flex(row,center,center,nowrap);
+                margin-top: 10px;
+                border-radius: 3px;
+            }
+        }
+    }
+} 
+
+
+
+ 

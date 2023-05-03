@@ -1,0 +1,50 @@
+.container{
+    margin: 3% 20% 15% 20%;
+}
+
+.lista-contacto{
+    list-style: none;
+    margin-bottom: 2%;
+    @include flex(column,center,center,nowrap);
+    p{
+        font-weight: 400;
+        font-size: $textxl;
+    }
+    svg{
+        width: 8%;
+    }
+}
+    
+iframe{
+    width: 80%;
+}
+
+//media queries
+
+@media (max-width: 768px){ 
+    .lista-contacto{
+        margin-top: 12%;
+        margin-bottom: 12%;
+       p{
+        font-weight: 400;
+        font-size: $textmd;
+        } 
+    } 
+    
+    iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    //no pude ajustar el margen
+    .container{
+        margin: 3% 20% 15% 20%;
+    }
+    .formulario{
+        width: 80%;
+    }
+    iframe{
+        width: 80%;
+    }
+}

@@ -1,0 +1,27 @@
+header{
+    img{
+        width: 100%;
+    }
+}
+.contenedor-inicio{
+    @include flex(row,space-around,center,nowrap);
+    background-color: $secondarycolor;
+    width: 80vw;
+    height: auto;
+    margin: 1% auto;
+    padding: 5%;
+    div{
+        p{
+            margin-top: 22px;  
+        }
+    }    
+}
+
+.card{
+    @include flex(row,space-between,center,nowrap)
+}
+
+.destacado{
+    margin: 1% 10% 5% 10%;
+}
+    

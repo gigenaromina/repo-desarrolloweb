@@ -1,0 +1,26 @@
+.contenedor-como{
+    width: 70vw;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    @include flex(row,space-around,center,nowrap);
+    div{
+        span{
+           margin-top: 22px;
+           @include flex(column,center,center,nowrap)
+        }
+    }
+}
+
+@keyframes animatedcontainer{
+    0%{background-image: url(../img/registrate.jpg);}
+    100%{background-image: url(../img/registrate\ \(1\).jpg);}
+}
+
+//media queries
+
+@media (max-width: 600px){
+    .contenedor-como{
+        display: none;
+    }
+}
