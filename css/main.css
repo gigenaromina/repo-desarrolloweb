@@ -104,12 +104,14 @@ main h1 {
   font-weight: 400;
   font-size: 1.8em;
   margin: 0.8%;
+  margin-top: 3%;
 }
 main h2 {
   color: black;
   font-weight: 400;
   font-size: 1.4em;
   margin: 1%;
+  margin-bottom: 6%;
 }
 main h3 {
   color: black;
@@ -148,11 +150,17 @@ main h3 {
     font-size: 1.4em;
     margin: 0.6%;
   }
+  main h2 {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 480px) {
   main h1 {
     font-size: 1.2em;
     margin: 0.6%;
+  }
+  main h2 {
+    font-size: 1em;
   }
 }
 header img {
@@ -192,7 +200,7 @@ header img {
 }
 
 .tienda {
-  margin: 2% 10% 9% 10%;
+  margin: 2% 8% 9% 8%;
   display: grid;
   grid-template-columns: 13% repeat(4, 1fr);
   grid-template-rows: 2% repeat(3, 34%);
@@ -377,18 +385,29 @@ main section figure button {
   border-radius: 3px;
 }
 
+@media (max-width: 1400px) {
+  .tienda {
+    margin: 2% 4% 9% 4%;
+  }
+}
+@media (max-width: 1250px) {
+  .tienda {
+    margin: 2% 2% 9% 2%;
+  }
+}
 .contenedor-como {
-  width: 70vw;
+  width: 80vw;
   height: auto;
   margin: 50px auto;
   padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: nowrap;
 }
 .contenedor-como div span {
+  font-size: 1.2em;
   margin-top: 22px;
   display: flex;
   flex-direction: column;
@@ -396,13 +415,46 @@ main section figure button {
   align-items: center;
   flex-wrap: nowrap;
 }
+.contenedor-como div p {
+  font-size: 1em;
+}
 
-@keyframes animatedcontainer {
-  0% {
-    background-image: url(../img/registrate.jpg);
+.contenedor-responsive {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .contenedor-como {
+    width: 95vw;
   }
-  100% {
-    background-image: url(../img/registrate\ \(1\).jpg);
+}
+@media (max-width: 1024px) {
+  .contenedor-como {
+    width: 100vw;
+  }
+}
+@media (max-width: 900px) {
+  .contenedor-como div span {
+    font-size: 1em;
+  }
+  .contenedor-como div p {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-como div span {
+    font-size: 1em;
+  }
+  .contenedor-como div p {
+    font-size: 0.8em;
+  }
+  .contenedor-como div svg {
+    width: 30%;
+  }
+}
+@media (min-width: 601px) {
+  .contenedor-responsive {
+    display: none;
   }
 }
 @media (max-width: 600px) {

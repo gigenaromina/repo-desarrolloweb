@@ -3,7 +3,7 @@
 }
 
 .tienda{
-    margin: 2% 10% 9% 10%;
+    margin: 2% 8% 9% 8%;
     display: grid;
     grid-template-columns: 13% repeat(4,1fr);
     grid-template-rows: 2% repeat(3,34%);
@@ -122,6 +122,16 @@ main{
     }
 } 
 
+//media queries
 
+@media (max-width: 1400px){
+    .tienda{
+        margin: 2% 4% 9% 4%;
+    }
+}
 
- 
+@media (max-width: 1250px){
+    .tienda{
+        margin: 2% 2% 9% 2%;
+    }
+}

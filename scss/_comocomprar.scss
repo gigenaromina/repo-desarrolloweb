@@ -1,26 +1,78 @@
 .contenedor-como{
-    width: 70vw;
+    width: 80vw;
     height: auto;
     margin: 50px auto;
     padding: 20px;
-    @include flex(row,space-around,center,nowrap);
+    @include flex(row,space-around,flex-start,nowrap);
     div{
         span{
-           margin-top: 22px;
-           @include flex(column,center,center,nowrap)
+            font-size: $textlg;
+            margin-top: 22px;
+            @include flex(column,center,center,nowrap)
+        }
+        p{
+            font-size: $textmd;
         }
     }
 }
 
-@keyframes animatedcontainer{
-    0%{background-image: url(../img/registrate.jpg);}
-    100%{background-image: url(../img/registrate\ \(1\).jpg);}
+.contenedor-responsive{
+    width: 100%;
+
+
 }
 
+
 //media queries
+@media (max-width: 1200px){
+    .contenedor-como{
+        width: 95vw;
+    }
+}
+
+@media (max-width: 1024px){
+    .contenedor-como{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 900px){
+    .contenedor-como{
+        div{
+            span{
+                font-size: $textmd;
+            }
+            p{
+                font-size: $textsm;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .contenedor-como{
+        div{
+            span{
+                font-size: $textmd;
+            }
+            p{
+                font-size: $textsm;
+            }
+            svg{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (min-width: 601px){
+.contenedor-responsive{
+    display: none;
+}
+}
 
 @media (max-width: 600px){
-    .contenedor-como{
-        display: none;
-    }
+.contenedor-como{
+    display: none;
+}
 }

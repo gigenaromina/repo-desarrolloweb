@@ -108,12 +108,14 @@ main{
         font-weight: 400;
         font-size: $textxxl;
         margin: 0.8%;
+        margin-top: 3%;
     } 
     h2{
         color: $maincolor;
         font-weight: 400;
         font-size: $textxl;
         margin: 1%;
+        margin-bottom: 6%;
     }
     h3{
         color: $maincolor;
@@ -167,15 +169,25 @@ main{
 
 //main
 @media (max-width: 768px){
-    main h1{
-        font-size: $textxl;
-        margin: 0.6%;
-    }
+    main{
+        h1{
+            font-size: $textxl;
+            margin: 0.6%;
+        }
+        h2{
+            font-size: $textlg;
+        }
+    } 
 }
 
 @media (max-width: 480px){
-    main h1{
-        font-size: $textlg;
-        margin: 0.6%;
+    main {
+        h1{
+            font-size: $textlg;
+            margin: 0.6%;
+        } 
+        h2{
+            font-size: $textmd;
+        }
     }
 }
