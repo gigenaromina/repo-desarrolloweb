@@ -3,11 +3,11 @@
 }
 
 .tienda{
-    margin: 2% 8% 9% 8%;
+    margin: 2% 7% 9% 7%;
     display: grid;
     grid-template-columns: 13% repeat(4,1fr);
-    grid-template-rows: 2% repeat(3,34%);
-    gap: 1%;
+    grid-template-rows: 2% repeat(3,32%);
+    gap: 2%;
     grid-template-areas: 
     "inicio actions actions actions actions"
     "filtros uno dos tres cuatro"
@@ -15,7 +15,8 @@
     "filtros nueve diez once doce";
     .inicio{
         grid-area: inicio;
-        @include flex(row, flex-start, center, nowrap);
+        @include flex(row, flex-start, flex-start, nowrap);
+        font-size: $textmd;
         a{
             color: $maincolor;
             text-decoration: none;
@@ -24,10 +25,12 @@
     .actions{
         grid-area: actions;
         @include flex(row, flex-end, flex-start, nowrap);
+        font-size: $textmd;
     }
     .filtros{
         grid-area: filtros;
         @include flex(column, flex-start, flex-start, nowrap);
+        position: sticky;
         line-height: 25px;
         a{
             color: $maincolor;
@@ -46,92 +49,134 @@
     } 
     .prod1{
         grid-area:uno;
-        @include flex(row,center,center,nowrap);
     }
     .prod2{
         grid-area:dos;
-        @include flex(row,center,center,nowrap);
     }
     .prod3{
         grid-area:tres;
-        @include flex(row,center,center,nowrap);
     }
     .prod4{
         grid-area:cuatro;
-        @include flex(row,center,center,nowrap);
     }
     .prod5{
         grid-area:cinco;
-        @include flex(row,center,center,nowrap);
+      
     }
     .prod6{
         grid-area:seis;
-        @include flex(row,center,center,nowrap);
     }
     .prod7{
         grid-area:siete;
-        @include flex(row,center,center,nowrap);
     }
     .prod8{
         grid-area:ocho;
-        @include flex(row,center,center,nowrap);
     }
     .prod9{
         grid-area:nueve;
-        @include flex(row,center,center,nowrap);
     }
     .prod10{
         grid-area:diez;
-        @include flex(row,center,center,nowrap);
     }
     .prod11{
         grid-area:once;
-        @include flex(row,center,center,nowrap);
     }
     .prod12{
         grid-area:doce;
-        @include flex(row,center,center,nowrap);
     }
 }
-
-main{
-    section{
-        figure{
-            line-height: 30px;
-            img{
-                width: 100%;
-            }
-            figcaption{
-                @include flex(row,center,center,nowrap);
-            }
-            span{
-                b{
-                    @include flex(row,center,center,nowrap);
-                }
-            } 
-            p{
-                @include flex(row,center,center,nowrap);
-                border-radius: 10px;
-            }
-            button{
-                @include flex(row,center,center,nowrap);
-                margin-top: 10px;
-                border-radius: 3px;
-            }
-        }
-    }
-} 
 
 //media queries
 
-@media (max-width: 1400px){
+@media (max-width:1286px){
     .tienda{
-        margin: 2% 4% 9% 4%;
+        margin: 2% 3% 9% 3%;
     }
 }
 
-@media (max-width: 1250px){
+@media (max-width: 1200px){
     .tienda{
-        margin: 2% 2% 9% 2%;
+        grid-template-columns: 16% repeat(3,1fr);
+        grid-template-rows: 2% repeat(4,24%);
+        gap: 1%;
+        grid-template-areas: 
+        "inicio actions actions actions"
+        "filtros uno dos tres"
+        "filtros cuatro cinco seis"
+        "filtros siete ocho nueve" 
+        "filtros diez once doce";
     }
 }
+
+@media (max-width: 992px){
+    .tienda{
+        margin: 3% 5% 5% 5%;
+        grid-template-columns: 21% repeat(2,1fr);
+        grid-template-rows: 0.1% repeat(6,15%);
+        gap: 1%;
+        grid-template-areas: 
+        "inicio actions actions"
+        "filtros uno dos"
+        "filtros tres cuatro" 
+        "filtros cinco seis"
+        "filtros siete ocho" 
+        "filtros nueve diez"
+        "filtros once doce";
+    }
+}
+
+@media (max-width: 768px){
+    .tienda{
+        margin: 3% 1% 9% 4%;
+        grid-template-columns: 26% 64%;
+        grid-template-rows: 0.1% repeat(13,8%);
+        gap: 1%;
+        grid-template-areas: 
+        "inicio actions"
+        "filtros uno"
+        "filtros dos" 
+        "filtros tres"
+        "filtros cuatro" 
+        "filtros cinco"
+        "filtros seis"
+        "filtros siete"
+        "filtros ocho"
+        "filtros nueve"
+        "filtros diez"
+        "filtros once"
+        "filtros doce";
+    }
+}
+
+@media (max-width: 576px){
+    .tienda{
+        margin: 5% 10% 9% 10%;
+        grid-template-columns: 0% 100%;
+        grid-template-rows: 0.1% repeat(13,8%);
+        gap: 1%;
+        grid-template-areas: 
+        "inicio actions"
+        "filtros uno"
+        "filtros dos" 
+        "filtros tres"
+        "filtros cuatro" 
+        "filtros cinco"
+        "filtros seis"
+        "filtros siete"
+        "filtros ocho"
+        "filtros nueve"
+        "filtros diez"
+        "filtros once"
+        "filtros doce";
+        .inicio{
+            display: none;
+        }
+        .actions{
+            font-size: $textsm;
+        }
+        .filtros{
+            display: none;
+        }
+    }
+}
+//no pude identificar porque las cards me quedaron mas abajo que el footer :/

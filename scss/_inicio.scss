@@ -17,11 +17,32 @@ header{
     }    
 }
 
+.card-grupo{
+    gap: 2%
+}
+
 .card{
-    @include flex(row,space-between,center,nowrap)
+    @include flex(row,space-between,center,nowrap);
 }
 
 .destacado{
     margin: 1% 10% 5% 10%;
 }
     
+@media (max-width: 480px){
+    .contenedor-inicio{
+        @include flex(column,space-between,center,nowrap);
+        div{
+            p{
+                margin-top: 22px;  
+            }
+        }    
+        div{
+            div{
+                display: none;
+            }
+            
+        }
+    }
+    
+}

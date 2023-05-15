@@ -3,66 +3,77 @@
     @include flex(column,center,flex-start,nowrap);
     section{
         div{
-            h2{
-                font-weight: 400;
-                font-size: $textxxl;
-                margin-top: 2%;
-                margin-bottom: 0.8%;
-            }
-            ul{
-                li{
-                    font-weight: 400;
-                    font-size: $textlg;
-                    display: flex;
-                    line-height: 40px;
-                }
-            }
-        }
-    }   
-}
-
-//medias queries
-
-@media (max-width: 768px){
-    .preguntas{
-        section{
             div{
                 h2{
-                    font-size: $textxl;
-                    margin-top: 30px;
-                    margin-bottom: 10px;
+                    button{
+                        font-weight: 400;
+                        font-size: $textlg;
+                    }
                 }
                 ul{
                     li{
                         font-weight: 400;
                         font-size: $textmd;
                         display: flex;
-                        line-height: 35px;
+                        line-height: 40px;
                     }
                 }
-            }     
+            }   
         }
-    }  
+    }   
+}
+
+//medias queries
+
+@media (max-width: 992px){
+    .preguntas{
+        section{
+            div{
+                div{
+                    h2{
+                        button{
+                            font-size: $textmd;
+                            margin-top: 2%;
+                            margin-bottom: 0.8%;
+                        }
+                    }
+                    ul{
+                        li{
+                            font-weight: 400;
+                            font-size: $textsm;
+                            display: flex;
+                            line-height: 35px;
+                        }
+                    }
+                }   
+            }
+        }   
+    }
 }
 
 @media (max-width: 480px){
     .preguntas{
+        margin: 1% 3% 5% 3%;
+        @include flex(column,center,flex-start,nowrap);
         section{
             div{
-                h2{
-                    font-size: $textlg;
-                    margin-top: 30px;
-                    margin-bottom: 10px;
-                }
-                ul{
-                    li{
-                        font-weight: 400;
-                        font-size: $textsm;
-                        display: flex;
-                        line-height: 30px;
+                div{
+                    h2{
+                        button{
+                            font-size: $textsm;
+                            margin-top: 2%;
+                            margin-bottom: 0.8%;
+                        }
                     }
-                }
+                    ul{
+                        li{
+                            font-size: $textxs;
+                            display: flex;
+                            line-height: 35px;
+                        }
+                    }
+                }   
             }
-        }
+        }   
     }
 }

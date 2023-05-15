@@ -2,6 +2,7 @@
     width: 80vw;
     height: auto;
     margin: 50px auto;
+    margin-top: 80px;
     padding: 20px;
     @include flex(row,space-around,flex-start,nowrap);
     div{
@@ -12,6 +13,7 @@
         }
         p{
             font-size: $textmd;
+            margin-bottom: 90px;
         }
     }
 }
@@ -24,6 +26,7 @@
 
 
 //media queries
+
 @media (max-width: 1200px){
     .contenedor-como{
         width: 95vw;
@@ -76,3 +79,5 @@
     display: none;
 }
 }
+
+//Me quedo espacio en blanco abajo del footer y no identifique por que
